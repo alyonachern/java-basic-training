@@ -8,12 +8,14 @@ gradlew.bat
 
 ### IntelliJ IDEA ###
 .idea
+idea/
 *.iws
 *.iml
 *.ipr
 
 ### Gradle ###
 .gradle
+gradle/
 
 ### Logs ###
 *.log
