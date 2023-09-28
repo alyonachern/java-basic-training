@@ -39,8 +39,10 @@ public class JavaTraining {
         System.out.println("int + double = double " + (x + d));
         char r = (char) b;
         System.out.println("new char = " + r);
-
-
-
+        if (!isSmart) {
+            System.out.println(c);
+        } else {
+            System.out.println(f);
+        }
     }
 }
