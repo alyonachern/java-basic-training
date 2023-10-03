@@ -13,15 +13,13 @@ public class ListTraining {
         arrayList.add("Mortal Kombat");
         System.out.println(arrayList);
         System.out.println("Third element is " + arrayList.get(3));
+
         arrayList.remove("Uncharted 4");
         arrayList.set(3, "Resident Evil");
         arrayList.add("GTA");
         Collections.sort(arrayList);
-        System.out.println(arrayList);
-
-        for (String arrayElement: arrayList
-             ) {
-            System.out.println(arrayElement + " 2");;
+        for (int i = 0; i < arrayList.size(); i++) {
+            System.out.println(arrayList.get(i) + " 2");
         }
     }
 }

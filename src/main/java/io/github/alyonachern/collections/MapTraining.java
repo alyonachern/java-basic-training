@@ -1,6 +1,7 @@
 package io.github.alyonachern.collections;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class MapTraining {
@@ -11,7 +12,9 @@ public class MapTraining {
         map.put("Молоко", 6);
         map.put("Творог", 2);
 
-        for(Map.Entry<String, Integer> entry: map.entrySet()) {
+        Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, Integer> entry = iterator.next();
             String key = entry.getKey();
             Integer value = entry.getValue();
             System.out.println(key + " - " + value + " шт.");

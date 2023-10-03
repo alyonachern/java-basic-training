@@ -2,6 +2,7 @@ package io.github.alyonachern.collections;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Iterator;
 
 
 public class QueueTraining {
@@ -15,9 +16,11 @@ public class QueueTraining {
         deque.pop();
         deque.peekLast();
         deque.push("Snake");
-        for (String dequeElement : deque
-             ) {
-            System.out.println(dequeElement);
+
+        Iterator iterator = deque.iterator();
+        while(iterator.hasNext()) {
+            String element = (String) iterator.next();
+            System.out.println(element);
         }
     }
 }
